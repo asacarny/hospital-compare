@@ -100,7 +100,7 @@ Mortality &amp; Readmission 2010Q3-2013Q2 (except hospital wide)
 
 Extract code:
 
-perl -e &#39;@t = qw(Measure\_Dates HQI\_FTNT HQI\_HOSP\_HCAHPS HQI\_HOSP\_TimelyEffectiveCare HQI\_HOSP\_ReadmCompDeath HQI\_HOSP\_HAI HQI\_HOSP\_IMG HQI\_HOSP\_MSPB HQI\_HOSP\_MV HQI\_OP\_Procedure\_Volume HQI\_HOSP\_STRUCTURAL); foreach $t (@t) { print(&quot;mdb-export Hospital.mdb $t \&gt; $t.csv\n&quot;); system(&quot;mdb-export Hospital.mdb $t \&gt; $t.csv&quot;); }&#39;
+`perl -e '@t = qw(Measure_Dates HQI_FTNT HQI_HOSP_HCAHPS HQI_HOSP_TimelyEffectiveCare HQI_HOSP_ReadmCompDeath HQI_HOSP_HAI HQI_HOSP_IMG HQI_HOSP_MSPB HQI_HOSP_MV HQI_OP_Procedure_Volume HQI_HOSP_STRUCTURAL); foreach $t (@t) { print("mdb-export Hospital.mdb $t > $t.csv\n"); system("mdb-export Hospital.mdb $t > $t.csv"); }'`
 
 ## 2014 Data
 
@@ -112,7 +112,7 @@ Mortality &amp; Readmission 2011Q3-2014Q2 (except hospital wide)
 
 Extract code:
 
-perl -e &#39;@t = qw( MEASURE\_DATES HQI\_FTNT HQI\_HOSP\_STRUCTURAL HQI\_HOSP\_HCAHPS HQI\_HOSP\_TIMELYEFFECTIVECARE HQI\_HOSP\_COMP HQI\_HOSP\_HAI  HQI\_HOSP\_READMDEATH HQI\_HOSP\_IMG HQI\_HOSP\_PAYMENTANDVALUEOFCARE HQI\_HOSP\_MSPB HQI\_OP\_PROCEDURE\_VOLUME); foreach $t (@t) { print(&quot;mdb-export Hospital.mdb $t \&gt; $t.csv\n&quot;); system(&quot;mdb-export Hospital.mdb $t \&gt; $t.csv&quot;); }&#39;
+`perl -e '@t = qw( MEASURE_DATES HQI_FTNT HQI_HOSP_STRUCTURAL HQI_HOSP_HCAHPS HQI_HOSP_TIMELYEFFECTIVECARE HQI_HOSP_COMP HQI_HOSP_HAI  HQI_HOSP_READMDEATH HQI_HOSP_IMG HQI_HOSP_PAYMENTANDVALUEOFCARE HQI_HOSP_MSPB HQI_OP_PROCEDURE_VOLUME); foreach $t (@t) { print("mdb-export Hospital.mdb $t > $t.csv\n"); system("mdb-export Hospital.mdb $t > $t.csv"); }'`
 
 ## 2015 Data
 
@@ -132,4 +132,4 @@ Mortality &amp; Readmission 2013Q3-2016Q2 (except hospital wide)
 
 Extract code:
 
-`perl -e &#39;@t = qw( Measure\_Dates HQI\_FTNT HQI\_HOSP\_STRUCTURAL HQI\_HOSP\_HCAHPS HQI\_HOSP\_TimelyEffectiveCare HQI\_HOSP\_Comp HQI\_HOSP\_HAI  HQI\_HOSP\_ReadmDeath HQI\_HOSP\_IMG\_AVG HQI\_HOSP\_PaymentAndValueOfCare HQI\_HOSP\_MSPB HQI\_OP\_Procedure\_Volume); foreach $t (@t) { print(&quot;mdb-export Hospital.mdb $t \&gt; $t.csv\n&quot;); system(&quot;mdb-export Hospital.mdb $t \&gt; $t.csv&quot;); }&#39;`
+`perl -e '@t = qw( Measure_Dates HQI_FTNT HQI_HOSP_STRUCTURAL HQI_HOSP_HCAHPS HQI_HOSP_TimelyEffectiveCare HQI_HOSP_Comp HQI_HOSP_HAI  HQI_HOSP_ReadmDeath HQI_HOSP_IMG_AVG HQI_HOSP_PaymentAndValueOfCare HQI_HOSP_MSPB HQI_OP_Procedure_Volume); foreach $t (@t) { print("mdb-export Hospital.mdb $t > $t.csv\n"); system("mdb-export Hospital.mdb $t > $t.csv"); }'`
