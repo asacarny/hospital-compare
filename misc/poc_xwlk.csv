@@ -1,0 +1,38 @@
+measurecode,condition,measurename
+ami1,Heart Attack,Patients Given Aspirin at Arrival
+ami2,Heart Attack,Patients Given Aspirin at Discharge
+ami3,Heart Attack,Patients Given ACE Inhibitor for Left Ventricular Systolic Dysfunction (LVSD)
+ami3,Heart Attack,Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD)
+ami4,Heart Attack,Patients Given Adult Smoking Cessation Advice/Counseling
+ami4,Heart Attack,Patients Given Smoking Cessation Advice/Counseling
+ami5,Heart Attack,Patients Given Beta Blocker at Discharge
+ami6,Heart Attack,Patients Given Beta Blocker at Arrival
+ami7,Heart Attack,Patients Given Thrombolytic Medication Within 30 Minutes Of Arrival
+ami7,Heart Attack,Patients Given Fibrinolytic Medication Within 30 Minutes Of Arrival
+ami8,Heart Attack,Patients Given PCI Within 120 Minutes Of Arrival
+ami8,Heart Attack,Patients Given PCI Within 90 Minutes Of Arrival
+hf1,Heart Failure,Patients Given Discharge Instructions
+hf2,Heart Failure,Patients Given Assessment of Left Ventricular Function (LVF)
+hf2,Heart Failure,Patients Given an Evaluation of Left Ventricular Systolic (LVS) Function
+hf3,Heart Failure,Patients Given ACE Inhibitor for Left Ventricular Systolic Dysfunction (LVSD)
+hf3,Heart Failure,Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD)
+hf4,Heart Failure,Patients Given Adult Smoking Cessation Advice/Counseling
+hf4,Heart Failure,Patients Given Smoking Cessation Advice/Counseling
+pn1,Pneumonia,Patients Given Oxygenation Assessment
+pn2,Pneumonia,Patients Assessed and Given Pneumococcal Vaccination
+pn3,Pneumonia,Patients Having a Blood Culture Performed Prior to First Antibiotic Received in Hospital
+pn3,Pneumonia,Patients Whose Initial Emergency Room Blood Culture Was Performed Prior To The Administration Of The First Hospital Dose Of Antibiotics
+pn4,Pneumonia,Patients Given Adult Smoking Cessation Advice/Counseling
+pn4,Pneumonia,Patients Given Smoking Cessation Advice/Counseling
+pn5,Pneumonia,Patients Given Initial Antibiotic(s) within 4 Hours After Arrival
+pn6,Pneumonia,Patients Given the Most Appropriate Initial Antibiotic(s)
+pn7,Pneumonia,Patients Assessed and Given Influenza Vaccination
+scipinf1,Surgical Infection Prevention,Patients Who Received Preventative Antibiotic(s) One Hour Before Incision
+scipinf2,Surgical Infection Prevention,Patients who Received the Appropriate Preventative Antibiotic(s) for Their Surgery
+scipinf3,Surgical Infection Prevention,Patients Whose Preventative Antibiotic(s) are Stopped Within 24 hours After Surgery
+cac1,Children&#8217;s Asthma Care,Children Who Received Reliever Medication While Hospitalized for Asthma
+cac2,Children&#8217;s Asthma Care,Children Who Received Systemic Corticosteroid Medication (oral and IV Medication That Reduces Inflammation and Controls Symptoms) While Hospitalized for Asthma
+pn5,Pneumonia,Patients Given Initial Antibiotic(s) within 6 Hours After Arrival
+scipvte2,Surgical Infection Prevention,Patients Who Received Treatment To Prevent Blood Clots Within 24 Hours Before or After Selected Surgeries to Prevent Blood Clots
+scipinf2,Surgical Infection Prevention,Patients Who Received the Appropriate Preventative Antibiotic(s) for Their Surgery
+scipvte1,Surgical Infection Prevention,Patients Whose Doctors Ordered Treatments to Prevent Blood Clots (Venous Thromboembolism) For Certain Types of Surgeries
