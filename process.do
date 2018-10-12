@@ -8,6 +8,17 @@ set more off
 
 clear all
 
+**** source of hospital compare data ***
+
+* the data files are available here:
+* http://sacarny.com/data/
+
+* each year's files assumed to sit in the following folder:
+* $HCBASE/hospital`year'/
+
+* base directory where hospital compare data stored
+global HCBASE "source/"
+
 * mortality & readmission data spans 2007-2016
 global MRSTARTYEAR = 2007
 global MRENDYEAR = 2016
@@ -22,6 +33,9 @@ global POCENDYEAR = 2016
 
 * process of care measures that are in minutes, not shares of patients
 global MINUTEMEAS "ed1 ed2 op1 op3 op5 op18 op20 op21"
+
+* make the output folder if it doesn't exist
+capture mkdir output
 
 *** MORTALITY AND READMISSION ***
 
@@ -45,7 +59,7 @@ forvalues year = $MRSTARTYEAR/$MRENDYEAR {
 			local fname "HQI_HOSP_ReadmDeath"
 		}
 	
-		import delimited using extracted/hospital`year'/`fname'.csv, varnames(1)
+		import delimited using $HCBASE/hospital`year'/`fname'.csv, varnames(1)
 	}
 	else {
 		* starting in 2016, mortality and readmission stored in separate files
@@ -53,13 +67,13 @@ forvalues year = $MRSTARTYEAR/$MRENDYEAR {
 		* load mortality
 		tempfile mortality
 		import delimited ///
-			using "extracted/hospital`year'/Complications and Deaths - Hospital.csv", ///
+			using "$HCBASE/hospital`year'/Complications and Deaths - Hospital.csv", ///
 			varnames(1)
 		save `mortality'
 		
 		* load readmission
 		import delimited ///
-			using "extracted/hospital`year'/Hospital Returns - Hospital.csv", ///
+			using "$HCBASE/hospital`year'/Hospital Returns - Hospital.csv", ///
 			varnames(1) clear
 		
 		* bring together
@@ -235,7 +249,7 @@ forvalues year=$HCSTARTYEAR/$HCENDYEAR {
 		local fname "HCAHPS - Hospital"
 	}
 
-	import delimited using "extracted/hospital`year'/`fname'.csv", varnames(1)
+	import delimited using "$HCBASE/hospital`year'/`fname'.csv", varnames(1)
 	
 	drop hospitalname
 	
@@ -444,7 +458,7 @@ forvalues year = $POCSTARTYEAR/$POCENDYEAR {
 		local fname = "Timely and Effective Care - Hospital"
 	}
 
-	import delimited using "extracted/hospital`year'/`fname'.csv", varnames(1)
+	import delimited using "$HCBASE/hospital`year'/`fname'.csv", varnames(1)
 
 	drop hospitalname
 	
