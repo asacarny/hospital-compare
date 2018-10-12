@@ -1,4 +1,4 @@
-# Notes on how the hospital compare metrics were calculated
+# Notes on where I found the Hospital Compare data
 
 # Method
 
@@ -122,6 +122,10 @@ Process of Care and HCAHPS from 2015Q1-2015Q4. Some process of care shorter wind
 
 Mortality &amp; Readmission 2012Q3-2015Q2 (except hospital wide)
 
+Extract code:
+
+`perl -e '@t = qw( Measure_Dates HQI_FTNT HQI_HOSP_STRUCTURAL HQI_HOSP_HCAHPS HQI_HOSP_TimelyEffectiveCare HQI_HOSP_Comp HQI_HOSP_HAI  HQI_HOSP_ReadmDeath HQI_HOSP_IMG_AVG HQI_HOSP_PaymentAndValueOfCare HQI_HOSP_MSPB HQI_OP_Procedure_Volume); foreach $t (@t) { print("mdb-export Hospital.mdb $t > $t.csv\n"); system("mdb-export Hospital.mdb $t > $t.csv"); }'`
+
 ## 2016 Data
 
 Pulled October 2017 archive from [https://data.medicare.gov/data/archives/hospital-compare](https://data.medicare.gov/data/archives/hospital-compare)
@@ -129,7 +133,3 @@ Pulled October 2017 archive from [https://data.medicare.gov/data/archives/hospit
 Process of Care and HCAHPS from 2016Q1-2016Q4
 
 Mortality &amp; Readmission 2013Q3-2016Q2 (except hospital wide)
-
-Extract code:
-
-`perl -e '@t = qw( Measure_Dates HQI_FTNT HQI_HOSP_STRUCTURAL HQI_HOSP_HCAHPS HQI_HOSP_TimelyEffectiveCare HQI_HOSP_Comp HQI_HOSP_HAI  HQI_HOSP_ReadmDeath HQI_HOSP_IMG_AVG HQI_HOSP_PaymentAndValueOfCare HQI_HOSP_MSPB HQI_OP_Procedure_Volume); foreach $t (@t) { print("mdb-export Hospital.mdb $t > $t.csv\n"); system("mdb-export Hospital.mdb $t > $t.csv"); }'`
