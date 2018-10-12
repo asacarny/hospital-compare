@@ -1,0 +1,6 @@
+process.log
+sync.sh
+output/
+source/
+source-notcurrentlyusing/
+to-website/
