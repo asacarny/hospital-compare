@@ -31,4 +31,5 @@ http://sacarny.com/public-files/hospital-compare/latest/hospital-compare-source.
 
 # Todo
 * Provide the shares of patients taking on each response value in the HCAHPS results
-* Process the other Hospital Compare measures, like hospital associated infections and patient safety indicators
+* Process the other Hospital Compare measures, like hospital associated infections and patient safety indicators. I've kept the source data for these measures in:
+http://sacarny.com/public-files/hospital-compare/latest/hospital-compare-source-notcurrentlyusing.zip
