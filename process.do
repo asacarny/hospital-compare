@@ -211,7 +211,7 @@ foreach cond in ami hf pn copd stk cabg hk {
 
 compress
 save output/mortreadm.dta, replace
-saveold output/mortreadm.v11.dta, replace version(11)
+saveold output/mortreadm.v12.dta, replace version(11)
 export delimited output/mortreadm.csv, replace
 
 log close
@@ -404,7 +404,7 @@ label var understood_score "Patients Understood Care (1-3)"
 
 compress
 save output/hcahps.dta, replace
-saveold output/hcahps.v11.dta, replace version(11)
+saveold output/hcahps.v12.dta, replace version(11)
 export delimited output/hcahps.csv, replace
 
 log close
@@ -664,7 +664,7 @@ label var edv_denom "Emergency dept volume (Denominator)"
 
 compress
 save output/poc.dta, replace
-saveold output/poc.v11.dta, replace version(11)
+saveold output/poc.v12.dta, replace version(11)
 export delimited output/poc.csv, replace
 
 copy misc/poc_xwlk.csv output/poc_xwlk.csv, replace
