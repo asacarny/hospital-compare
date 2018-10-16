@@ -1,5 +1,5 @@
 # CMS Hospital Compare Data 2004-2016
-Here you'll find code to process the public use CMS Hospital Compare data. The output include CMS Hospital Compare data for the years 2004-2016. I originally processed this data focusing on the year 2006-2008 values for the HCAHPS and the AMI, CHF, and pneumonia mortality/readmission and process of care (now called timely and effective care) scores. The tables that were added more recently (e.g. hospital associated infections, structural measures) are not included. If you would like to use this data in your own research, I urge you test it carefully.
+Here you'll find code to process the public use CMS Hospital Compare data. The output includes CMS Hospital Compare data for the years 2004-2016. I originally processed this data focusing on the year 2006-2008 values for the HCAHPS and the AMI, CHF, and pneumonia mortality/readmission and process of care (now called timely and effective care) scores. The tables that were added more recently (e.g. hospital associated infections, structural measures) are not included. If you would like to use this data in your own research, I urge you test it carefully.
 
 # Download the processed data
 
